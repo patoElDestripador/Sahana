@@ -1,0 +1,547 @@
+/*pato*/
+:root{
+    --color1: #0091ff;
+    --color2 : #FFFFFF; 
+    --color3 : #F6AE2D; 
+    --color4 : #353531; 
+    --color5 : #f2f2f3;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+h1 {
+    color: var(--color1);
+    font-size: 50px;
+}
+
+h2 {
+    color: var(--color1);
+    font-size: 40px;
+}
+
+h3 {
+    color: var(--color4);
+    font-size: 30px;
+}
+
+p {
+    color: var(--color4);
+    font-size: 20px;
+}
+
+
+
+body{
+    background-color: var(--color5);
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+.carrousel{
+    width: 100%;
+}
+
+.conteCarrousel{
+    width: 100%;
+    height: 520px;
+    overflow: hidden;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14),0 1px 10px 0 rgba(0,0,0,0.12),0 2px 4px -1px rgba(0,0,0,0.3); 
+
+}
+
+.itemCarrousel{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.itemCarrouselTarjeta{
+    width: 100%;
+    height: 100%;
+}
+
+.itemCarrouselArrows{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px; 
+}
+
+.itemCarrouselArrows > i:hover {
+    cursor: pointer;
+}
+
+#itemCarrousel-1{
+    background-image: url("https://c0.wallpaperflare.com/preview/200/576/1023/cartagena-colombia-trip-caribbean.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#itemCarrousel-2{
+    background-image: url("https://c0.wallpaperflare.com/preview/137/185/140/cartagena-colombia-bocagrande-sun.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#itemCarrousel-3{
+    background-image: url("https://c1.wallpaperflare.com/preview/933/701/176/cartagena-night-city-bocagrande-foccus.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.conteCarrouselController{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.conteCarrouselController > a{
+    text-decoration: none;
+    font-size: 2em;
+}
+
+.itemCarrouselArrows > a > i{
+    color: var(--color2);
+}
+
+.card{
+    background-color:var(--color2);
+    width: 360px;
+    height: 510px;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition-duration: 100ms;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14),0 1px 10px 0 rgba(0,0,0,0.12),0 2px 4px -1px rgba(0,0,0,0.3); 
+
+}
+.contenedorPequeke{
+    width: 30%;
+}
+.animacion1:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    box-shadow: 0 4px 5px 0 rgba(0, 145, 255,0.14),0 1px 10px 0 rgba(0, 145, 255,0.12),0 2px 4px -1px rgba(0, 145, 255,0.3); 
+}
+
+.cardImagen{
+    width: 100%;
+    height: 360px;
+}
+
+.contenedorBotonNoches{
+    width: 100%;
+    display: flex;
+    justify-content:flex-end;
+    margin-top: -15px;
+}
+.cardIconBoton{
+    cursor: pointer;
+    background-color: var(--color1);
+    border-radius: 15px;
+    width: 130px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.cardIconBoton p {
+    text-align: center;
+    margin-top: 5px;
+    color: var(--color2);
+}
+
+.ImagenCardItem{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    background-size: cover;
+
+}
+.botonVerMas{
+    border-radius: 15px;
+    width: 150px;
+    height: 40px;
+    font-size:larger;
+    background-color: var(--color1);
+    color: var(--color2);
+    border: 0;
+    transition-duration: 100ms;
+}
+
+.cardContenido p{
+    display: flex;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.cardContenido {
+    margin-left: 10px;
+}
+
+#textCardTitulo{
+    margin-top: -15px;
+}
+#textCardDestino{
+    color: var(--color1);
+}
+
+#textCardPresio{
+    margin-left: 20px;
+    width: 50%;
+}
+
+.redireccionVermas{
+    display: flex;
+    justify-content:flex-end ;
+    margin-top: -51px;
+    margin-left: 275px;
+}
+
+.contendorCards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+
+.contenedorBotonVermas{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.tituloCards {
+    font-size: xx-large;
+    margin-top: 1%;
+    margin-bottom: 1%;
+} 
+.cardHorizontalContedioExtra {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.CardHorizontalContenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cardHorizontalContenido{
+    height: 200px;
+    width: 1000px;
+    border-radius: 15px;
+    background:var(--color2);
+}
+.cardHorizontalContenido ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+    list-style:none;
+    flex-wrap: wrap;
+}
+
+.cardHorizontalContenido ul li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*pato*/
+
+@media(max-width:991px){
+    .carrousel{
+        width: 100%;
+    }
+}
+
+/*footer*/
+/* Estilos para el footer */
+footer {
+    background: var(--color4);
+    width: 100%;
+    margin-top: auto; 
+}
+
+footer .contentenidoFooter {
+    max-width: 1250px;
+    margin: auto;
+    padding: 30px 40px 40px 40px;
+}
+
+footer .contenedorLogo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    margin-left:10px ;
+}
+
+footer .contenedorLogo .logoFooter img{
+    height: 50px;
+    width: 150px;
+}
+
+footer .contenedorEnlaces {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+footer .enlaces {
+    width: calc(20% - 10px);
+    color: var(--color2);
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.enlaces li a{
+    color: var(--color2);
+}
+.inpbotonSub{
+    border-radius: 15px;
+    background-color: var(--color1);
+    color: var(--color2);
+    border: none;
+    height: 15px;
+    width: 80px;
+    cursor:pointer;
+}
+.inpbotonSub:hover{
+    transform: scale(1.02);
+} 
+.inpSubEmail{
+    border-radius: 15px;
+    height: 20px;
+    width: 130px;
+    border: none;
+}
+.footer .ContenedorDelaWeaDelCopyrig {
+    max-width: 1250px;
+    margin: auto;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ContenedorDelaWeaDelCopyrig .yaMeQuedeSinNombres span,
+.ContenedorDelaWeaDelCopyrig .yaMeQuedeSinNombres a {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--color2);
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.ContenedorDelaWeaDelCopyrig .yaMeQuedeSinNombres a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.ContenedorDelaWeaDelCopyrig .yaMeQuedeSinNombres a {
+    margin-right: 10px;
+}
+
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 900px) {
+    footer .contenedorEnlaces {
+        flex-wrap: wrap;
+    }
+
+    footer .informacionCorreo {
+        width: 40%;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 700px) {
+    footer {
+        position: relative;
+    }
+
+    footer .enlaces {
+        width: calc(33.33% - 10px);
+    }
+
+    footer .informacionCorreo {
+        width: 60%;
+    }
+
+    .ContenedorDelaWeaDelCopyrig .yaMeQuedeSinNombres span,
+    .ContenedorDelaWeaDelCopyrig .yaMeQuedeSinNombres a {
+        font-size: 12px;
+    }
+}
+/*footer*/
+/*header con imgaen*/
+
+.container-portada {
+    width: 100%;
+    height: 30%;
+}
+
+.text-justify{
+    text-align: justify;
+    }
+
+.seccion{
+    width: 100%;
+    display: flex;
+}
+
+.Imagenheader {
+    position: absolute;
+    background-image: url('https://imgdb.net/storage/uploads/872d28568f56c1faabd29eb2c171db97ff5487f154983c26ee64424697a7d44d.jpg'); 
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14),0 1px 10px 0 rgba(0,0,0,0.12),0 2px 4px -1px rgba(0,0,0,0.3); 
+}
+
+.contenedor-encabezado {
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    min-height:150px;
+    border-radius: 15px;
+    margin-left: 25%;
+    margin-right: 25%;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14),0 1px 10px 0 rgba(0,0,0,0.12),0 2px 4px -1px rgba(0,0,0,0.3); 
+    padding: 20px;
+    margin: 0 auto;
+/*     margin-top:200px; */
+    background-color: var(--color2);
+}
+
+.contenedor-body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    border-radius: 15px;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14),0 1px 10px 0 rgba(0,0,0,0.12),0 2px 4px -1px rgba(0,0,0,0.3); 
+    padding: 30px 30px 30px 30px;
+    margin: 0 auto;
+    background-color: var(--color2);
+    margin-top:50px;
+    margin-bottom: 50px;
+}
+.contenedor-body2 {
+    position: relative;
+    display: flex;
+/*     flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    border-radius: 15px;
+    padding: 30px 30px 30px 30px;
+    margin: 0 auto;
+    margin-top:50px;
+    margin-bottom: 50px;
+}
+
+
+.contenedorCards2{ 
+    position: relative;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14),0 1px 10px 0 rgba(0,0,0,0.12),0 2px 4px -1px rgba(0,0,0,0.3); 
+    padding: 30px 30px 30px 30px;
+    margin: 0 auto;
+    background-color: var(--color2);
+    margin-top:50px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.Imagenheader {
+    position: absolute;
+    background-image: url('https://imgdb.net/storage/uploads/872d28568f56c1faabd29eb2c171db97ff5487f154983c26ee64424697a7d44d.jpg'); 
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14),0 1px 10px 0 rgba(0,0,0,0.12),0 2px 4px -1px rgba(0,0,0,0.3); 
+}
+/*header con imgaen*/
+.iconosColor1{
+    width:40px; 
+    height:40px;
+    fill: var(--color1);
+}
+.iconosColor2{
+    width:50px; 
+    height:50px;
+    fill: var(--color1);
+}
+.iconCompra1{
+    width:100px; 
+    height:100px;
+    filter: grayscale(100%);
+}
+.iconCompra1:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    filter: none;
+
+}
+
+.contenedorCardsVarios {
+    display: flex;
+    position: relative;
+    width: auto;
+    height: auto;
+    min-height:150px;
+    border-radius: 15px;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top:50px;
+    background-color: var(--color2);
+}
+
+.contenedorCardsVarios li {
+    display: inline-block;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+

@@ -1,0 +1,95 @@
+:root{
+    --color1: #0091ff;
+    --color2 : #FFFFFF; 
+    --color3 : #F6AE2D; 
+    --color4 : #353531; 
+    --color5 : #f2f2f3;
+}
+.headerInicio{
+    background-color: hsla(60, 4%, 20%, 0.419);
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 5%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.logotipo{
+    cursor: pointer;
+    margin-right: auto;
+    width: 150px;
+    height: 45px;
+    justify-content: flex-start;
+}
+.navCosas{
+    list-style: none;
+}
+
+.navCosas li {
+    color: var(--color2);
+    display: inline-block;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+.navCosas li a {
+    color: var(--color2);
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+.navCosas li a:hover{
+    color: var(--color1);
+}
+
+.navCosas li:hover {
+    color: var(--color1);
+}
+
+#botonContacto{
+    margin-left: 20px;
+    padding: 9px 25px;
+    color: var(--color2);
+    background-color: var(--color1);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+} 
+
+#botonContacto:hover {
+    background-color:var(--color2) ;
+    color:var(--color1) ;
+}
+.navIdioma{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 130px;
+    background-color: hsla(60, 4%, 20%, 0.419);
+    backdrop-filter: blur(20px);
+}
+
+.navCosas li:hover .navIdioma {
+    display: block;
+    
+}
+.navIdioma  li:hover{
+    background-color: hsla(60, 4%, 20%, 0.419);
+    backdrop-filter: blur(20px);
+}
+.navIdioma li {
+    margin-top: 5%;
+    width: 100%;
+    
+}
+.navIdioma li a {
+    text-decoration: none; 
+    display: block;
+    color: var(--color2);
+    padding: 15px 15px 15px 15px;
+}
