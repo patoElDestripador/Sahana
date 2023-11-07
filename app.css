@@ -287,9 +287,8 @@ footer {
 }
 
 footer .contentenidoFooter {
-    max-width: 1250px;
-    margin: auto;
-    padding: 30px 40px 40px 40px;
+    max-width: 100%;
+    padding: 10px 10px 10px 10px;
 }
 
 footer .contenedorLogo {
